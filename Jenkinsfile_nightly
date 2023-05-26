@@ -1,9 +1,8 @@
 #!groovy
 
 properties([
-  //Run every 2 hours during the working day
-//  pipelineTriggers([H 8,10,12,14,16,18,20 * * 1-5')])
-  pipelineTriggers([H 8,20 * * 1-5')])
+
+  pipelineTriggers([cron('0 8,18 * * *')])
 ])
 
 @Library("Infrastructure")
