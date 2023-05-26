@@ -2,7 +2,7 @@
 
 properties([
 
-  pipelineTriggers([cron('0 8,18 * * *')])
+  pipelineTriggers([cron('0 8,18 * * 1-5')])
 ])
 
 @Library("Infrastructure")
